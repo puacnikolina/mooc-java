@@ -1,5 +1,6 @@
 package org.example.part3;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PracticeThree {
@@ -22,5 +23,6 @@ public class PracticeThree {
             System.out.println("Gets nothing.");
         }
     }
+
 
 }
