@@ -12,7 +12,8 @@ public class MainFour {
 //        debt();
 //        person();
 //        statistics();
-        statisticsTwo();
+//        statisticsTwo();
+        paymentCard();
     }
 
     private static void firstBankTransfer(){
@@ -111,6 +112,30 @@ public class MainFour {
         System.out.println("Sum: " + all.sum());
         System.out.println("Sum of even numbers: " + even.sum());
         System.out.println("Sum of odd numbers: " + odd.sum());
+    }
+    private static void paymentCard(){
+        PaymentCard paulsCard = new PaymentCard(20);
+        PaymentCard mattsCard = new PaymentCard(30);
+
+        paulsCard.eatHeartily();
+        mattsCard.eatAffordably();
+
+        System.out.println("Pauls card: " + paulsCard);
+        System.out.println("Matts card: " + mattsCard);
+
+        paulsCard.addMoney(20);
+        mattsCard.eatHeartily();
+
+        System.out.println("Pauls card: " + paulsCard);
+        System.out.println("Matts card: " + mattsCard);
+
+        paulsCard.eatAffordably();
+        paulsCard.eatAffordably();
+
+        mattsCard.addMoney(50);
+
+        System.out.println("Pauls card: " + paulsCard);
+        System.out.println("Matts card: " + mattsCard);
     }
 
 }
